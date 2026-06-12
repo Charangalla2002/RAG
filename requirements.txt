@@ -1,0 +1,34 @@
+# VaultRAG v2.0 - Python Dependencies
+# Install with: pip install -r requirements.txt --break-system-packages
+# or inside venv: pip install -r requirements.txt
+
+# ── Web Framework ─────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.1
+python-multipart>=0.0.9
+
+# ── Vector DB & Embeddings ────────────────────────────────────────
+chromadb>=0.5.0
+sentence-transformers>=3.0.1
+langchain-text-splitters>=0.2.0
+
+# ── Document Parsers ──────────────────────────────────────────────
+pypdf>=4.2.0
+python-docx>=1.1.2
+python-pptx>=0.6.23
+openpyxl>=3.1.2
+pandas>=2.2.2
+tabulate>=0.9.0
+beautifulsoup4>=4.12.3
+Pillow>=10.3.0
+pytesseract>=0.3.10   # optional: needs Tesseract binary
+
+# ── HTTP & Async ──────────────────────────────────────────────────
+aiohttp>=3.9.5
+
+# ── System Monitoring ─────────────────────────────────────────────
+psutil>=5.9.8
+# pynvml>=11.0.0      # optional: uncomment for NVIDIA GPU metrics
+
+# ── MCP (optional) ────────────────────────────────────────────────
+# mcp>=1.1.2
